@@ -1,0 +1,120 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[a4paper,portrait,margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage[greek]{babel}
+\usepackage[iso-8859-7]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amscd, latexsym,eucal}
+\usepackage{paralist}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{subfiles}
+
+\usepackage{kerkis}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{advdate}
+\usepackage{tcolorbox}
+
+
+\usetikzlibrary{arrows}
+\selectlanguage{greek}
+\newcommand{\kali}{
+\vskip 1.0cm
+\begin{center}
+\textbf{\emph{Καλή Επιτυχία!}}
+\end{center}
+}
+
+\newtheorem{ask}{{\bf ¶σκηση}}
+\newtheorem{thema}{\bf Θέμα}
+\newtheorem{question}{\bf Ερώτηση}
+
+\newcommand{\yestarday}{{\AdvanceDate[-1]}}
+\newcommand{\tomorrow}{{\DayAfter[1]}}
+
+\newcommand{\tl}{\textlatin}
+\newcommand{\hm}{\text{ημ}}
+\newcommand{\syn}{\text{συν}}
+\newcommand{\ef}{\text{εφ}}
+\newcommand{\sef}{\text{σφ}}
+
+\newcommand{\points}[1]{
+\begin{flushright}
+\vskip 0.1cm
+\bf{(Μονάδες #1)}
+\end{flushright}
+\vskip 0.1cm
+}
+
+\newcommand{\ar}{\mathbb{R}}
+\newcommand{\listitem}[1]{\item #1\vskip .3cm}
+\newcommand{\filline}[1]{\leavevmode\xleaders\hbox{#1}\hfill\kern0pt}
+\newcommand{\writeline}{\filline{\underline{ }}\vskip .2cm\noindent}
+\newcommand{\emptyline}{\uline{\hspace{2cm}}}
+\newcommand{\emptyspace}[1]{\uline{\hspace{#1cm}}}
+
+\newcommand{\linebox}[1]{
+    \noindent
+    \foreach \n in {1,...,#1}{\writeline}
+}
+
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+
+\def \vert{.2cm}
+\def \maxvert{.4cm}
+\def \scale{.5}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%Title%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\begin{center}
+\Huge\textsc{7ο Λύκειο Ιωαννίνων}
+\end{center}
+\begin{center}
+\LARGE{¶λγεβρα Β' Λυκείου}
+\end{center}
+\begin{center}
+\large{Τριγωνομετρικές Ταυτότητες}\vskip\vert
+%\small{\tl{Quiz}}\vskip \vert
+\small{Φύλλο Εργασίας}\vskip\vert
+% \scriptsize{Διάρκεια 10 λεπτά}
+\end{center}
+%\begin{center}
+%\large{Ομάδα Γ}
+%\end{center}
+\begin{center}
+\small{\tomorrow}
+%\small{\today}
+\end{center}
+\begin{center}
+\small{Ονοματεπώνυμο: \writeline}
+\end{center}
+\vskip 0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ask}
+ Να αποδειχθούν οι παρακάτω τριγωνομετρικές ταυτότητες:\vskip\vert
+ \begin{enumerate}
+ \item \(\dfrac{1-\ef ^2 x}{1+\ef ^2 x}=1-2\hm ^2x \)
+ \item \(\dfrac{1+\hm ^2x}{\syn ^2 x}-2\ef ^2x =1\)
+ \item \( \dfrac{1}{\hm^2 \omega \cdot \syn ^2 \omega}-\dfrac{1}{\syn ^2 \omega}=\dfrac{1}{\hm ^2 \omega } \)
+ \item \( \dfrac{1}{\syn^2 \phi}-\dfrac{1}{\sef ^2\phi}=1\)
+ \end{enumerate}
+\end{ask}
+\begin{ask}
+ Να αποδειχθούν οι παρακάτω τριγωνομετρικές ταυτότητες:\vskip\vert
+ \begin{enumerate}
+  \item \(\dfrac{1+\ef ^2 \omega}{\syn ^2 \omega}\cdot \sef ^4\omega =\dfrac{1+\sef ^2 \omega }{\hm ^2 \omega} \)
+  \item \(\dfrac{1}{\hm \phi} - \dfrac{\hm \phi}{1+\syn \phi} =\sef \phi\)
+  \item \( \dfrac{\ef x}{1-\sef x}+\dfrac{\sef x}{1-\ef x}-1=\dfrac{1}{\hm x \cdot \syn x} \)
+  \item \(\dfrac{\syn \omega}{1+\ef \omega}-\dfrac{\hm \omega}{1+\sef \omega}=\syn \omega -\hm \omega \)
+ \end{enumerate}
+\end{ask}
+\end{document}

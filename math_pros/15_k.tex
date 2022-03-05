@@ -1,0 +1,127 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[a4paper,portrait,margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage[greek]{babel}
+\usepackage[iso-8859-7]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amscd, latexsym,eucal}
+\usepackage{paralist}
+\usepackage{float}
+\usepackage{kerkis}
+\usepackage{enumerate}
+
+
+
+\newtheorem{ask}{{\bf ¶σκηση}}
+\newtheorem{thema}{\bf Θέμα}
+\newtheorem{question}{\bf Ερώτηση}
+
+\newcommand{\yestarday}{{\AdvanceDate[-1]}}
+\newcommand{\tomorrow}{{\DayAfter[1]}}
+
+
+\newcommand{\points}[1]{
+\begin{flushright}
+\vskip 0.1cm
+\bf{(Μονάδες #1)}
+\end{flushright}
+\vskip 0.1cm
+}
+
+\newcommand{\listitem}[1]{\item #1\vskip .3cm}
+\newcommand{\filline}[1]{\leavevmode\xleaders\hbox{#1}\hfill\kern0pt}
+\newcommand{\writeline}{\filline{\underline{ }}\vskip .2cm\noindent}
+\newcommand{\emptyline}{\uline{\hspace{2cm}}}
+\newcommand{\emptyspace}[1]{\uline{\hspace{#1cm}}}
+
+\newcommand{\linebox}[1]{
+    \noindent
+    \foreach \n in {1,...,#1}{\writeline}
+}
+
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+\def \vert{.2cm}
+\def \maxvert{.4cm}
+\def \scale{.5}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%Title%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\begin{center}
+\Huge\textsc{Λύκειο Κατσικά Ιωαννίνων}
+\end{center}
+\begin{center}
+\LARGE{Μαθηματικά Προσανατολισμού Β' Λυκείου}
+\end{center}
+
+\begin{center}
+\large{Πρόχειρο Διαγώνισμα Πρώτου Τετραμήνου}\vskip\vert
+%\small{Ομάδα Α}\vskip\vert
+\scriptsize{Διάρκεια μια διδακτική ώρα }
+\end{center}
+%\begin{center}
+%\large{Ομάδα Γ}
+%\end{center}
+\begin{center}
+%\small{\tomorrow}
+\small{\today}
+\end{center}
+%\vskip 0.5cm
+\begin{center}
+\small{Ονοματεπώνυμο: \writeline}
+\end{center}
+\vskip 0.5cm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thema}
+\begin{enumerate}
+ \item Στον παρακάτω πίνακα να αντιστοιχίσετε τις ευθείες της στήλης Α με το σωστό παράλληλο διάνυσμα της ευθείας στην στήλη Β.\vskip\vert
+ \begin{center}
+ \begin{tabular}{|rc|c|}\hline
+ \multicolumn{2}{|c|}{\text{Στήλη Α} }& \text{Στήλη Β} \\ \hline\hline
+  \(\quad y=2x-1\qquad \)& \(1. \qquad \) & \(\qquad  \alpha )\quad \vec{\delta}_1=(0,1) \) \\ \hline
+  \(\quad x+2y-3=0\qquad \)&\(2. \qquad \) & \(\qquad \beta )\quad \vec{\delta}_2=(-1,2) \) \\ \hline
+  \(\quad x=2\qquad\)&\( 3. \qquad \) & \(\qquad \gamma )\quad \vec{\delta}_3=(1,2) \) \\ \hline
+  \(\quad y=2\qquad \)&\(4. \qquad \) & \(\qquad \delta )\quad \vec{\delta}_4=(2,1) \) \\ \hline
+ &  & \(\qquad \varepsilon )\quad \vec{\delta}_5=(2,-1) \) \\ \hline
+ &  & \(\qquad  \zeta )\quad \vec{\delta}_6=(1,0) \) \\ \hline
+ \end{tabular}
+ \end{center}
+\points{15}
+ \item Να γράψετε τον ορισμό του συντελεστή διεύθυνσης \(\lambda \) μιας ευθείας. Όλες οι ευθείες έχουν συντελεστή διεύθυνσης? Αν όχι να γράψετε τη μορφή των ευθειών που δεν έχουν.\points{18}
+\end{enumerate}
+\end{thema}
+\vskip\maxvert
+\begin{thema}
+Δίνεται τρίγωνο \(AB\Gamma \) με \(Α(1,2), \ Β(3,-1), \ \Gamma(-2,-4)\). Να βρείτε την εξίσωση της ευθείας:\vskip\vert
+\begin{enumerate}[i.]
+ \item Της πλευράς \(B\Gamma \).\points{8}\vskip\vert
+ \item Της διαμέσου \(BM \).\points{9}\vskip\vert
+ \item Της ευθείας που είναι παράλληλη στην ευθεία \(B\Gamma\) και διέρχεται από το \(A\).\points{8}\vskip\vert
+ \item Του ύψους \(A\Delta \)\points{9}.
+\end{enumerate}
+\end{thema}
+\begin{thema}
+Δίνεται η εξίσωση:\vskip\vert
+\[
+ (\lambda^2-\lambda)x+(\lambda ^2+\lambda -2)y+\lambda ^2-5\lambda +4=0
+\]
+\vskip\vert
+\begin{enumerate}[i.]
+ \item Να βρείτε για ποιές τιμές του \(\lambda \) η εξίσωση παριστάνει ευθεία.\points{15}\vskip\vert
+  \item Έστω μια ευθεία \(\varepsilon \) που έχει την εξίσωση του προηγούμενου ερωτήματος και διέρχεται από το σημείο \(A(3,-2)\). Να βρείτε\vskip\vert
+  \begin{enumerate}
+  \item τον αριθμό \(\lambda\)\points{5}.
+  \item την ευθεία \(\zeta _1\) που είναι παράλληλη στην \(\varepsilon \) και διέρχεται από το σημείο \(B(1,6)\)\points{4}.
+  \item την ευθεία \(\zeta _2\) που είναι κάθετη στην \(\varepsilon \) και διέρχεται από το σημείο \(\Gamma (4,2)\).\points{5}
+  \item το σημείο τομής των ευθειών \(\zeta_1,\zeta_2\).\points{4}
+\end{enumerate}
+\end{enumerate}
+\end{thema}
+\end{document}

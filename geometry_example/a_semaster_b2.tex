@@ -1,0 +1,143 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[a4paper,portrait,margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage[greek]{babel}
+\usepackage[iso-8859-7]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amscd, latexsym,eucal}
+\usepackage{paralist}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{subfiles}
+
+\usepackage{kerkis}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{advdate}
+\usepackage{tcolorbox}
+
+
+
+\usetikzlibrary{arrows}
+\selectlanguage{greek}
+\newcommand{\kali}{
+\vskip 1.0cm
+\begin{center}
+\textbf{\emph{Καλή Επιτυχία!}}
+\end{center}
+}
+
+\newtheorem{ask}{{\bf ¶σκηση}}
+\newtheorem{thema}{\bf Θέμα}
+\newtheorem{question}{\bf Ερώτηση}
+
+\newcommand{\yestarday}{{\AdvanceDate[-1]}}
+\newcommand{\tomorrow}{{\DayAfter[1]}}
+
+\newcommand{\tl}{\textlatin}
+\newcommand{\hm}{\text{ημ}}
+\newcommand{\syn}{\text{συν}}
+\newcommand{\ef}{\text{εφ}}
+\newcommand{\sef}{\text{σφ}}
+
+\newcommand{\points}[1]{
+\begin{flushright}
+\vskip 0.1cm
+\bf{(Μονάδες #1)}
+\end{flushright}
+\vskip 0.1cm
+}
+\newcommand{\orio}[2]{
+\lim \limits_{x\to #1}#2
+}
+\newcommand{\ar}{\mathbb{R}}
+\newcommand{\listitem}[1]{\item #1\vskip .3cm}
+\newcommand{\filline}[1]{\leavevmode\xleaders\hbox{#1}\hfill\kern0pt}
+\newcommand{\writeline}{\filline{\underline{ }}\vskip .2cm\noindent}
+\newcommand{\emptyline}{\uline{\hspace{2cm}}}
+\newcommand{\emptyspace}[1]{\uline{\hspace{#1cm}}}
+
+\newcommand{\linebox}[1]{ \foreach \n in {1,...,#1}{\writeline} } \newcommand{\bank}[1]{ (\small{\textbf{Θέμα #1}})
+}
+\def \vert{.3cm}
+\def \maxvert{.4cm}
+\newcommand{\image}[2]{
+\begin{figure}[H]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+
+\newcommand{\ls}{Να χαρακτηρίσετε τις παρακάτω προτάσεις ως σωστό(Σ) ή λάθος(Λ).}
+
+\renewcommand{\hat}[1]{\widehat{#1}}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%Title%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\Huge\textsc{Λύκειο Κατσικά Ιωαννίνων}
+\end{center}
+\begin{center}
+\LARGE{Γεωμετρία Β' Λυκείου}
+\end{center}
+\begin{center}
+\large{Πρόχειρο Διαγώνισμα Α' Τετραμήνου}
+\end{center}
+\begin{center}
+\small{Τμήμα Β2}
+\end{center}
+\begin{center}
+\small{Διάρκεια: 1 Διδακτική Ώρα} 
+\end{center}
+%\begin{center}
+%\large{Ομάδα Γ}
+%\end{center}
+\begin{center}
+\small{\tomorrow}
+%\small{\today}
+\end{center}
+%\vskip 0.5cm
+\begin{center}
+\small{Ονοματεπώνυμο: \writeline}
+\end{center}
+\vskip 0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thema}
+ \begin{enumerate}
+  \item 
+  Δίνεται το παρακάτω τρίγωνο \(AB\Gamma \), με \(\hat{A}=90^0 \) και το ύψος του \(A\Delta \).\vskip\vert
+  \image{0.9}{a_triangle.png}\ls\\
+  \begin{enumerate}
+   \item \(AB^2=B\Delta \cdot B\Gamma \)
+   \item \(A\Gamma ^2=A\Delta \cdot \Delta \Gamma \)
+   \item \(A\Delta ^2=B\Delta \cdot \Delta \Gamma \)
+   \item \(AB^2+B\Gamma ^2 =A\Gamma ^2 \)
+   \item \(AB^2+A\Gamma ^2=B\Delta ^2+\Delta \Gamma ^2 +2 A\Delta ^2 \)
+  \end{enumerate}
+  \points{20}
+\item Δίνεται το τρίγωνο \(AB\Gamma \) του παρακάτω σχήματος:\vskip\vert
+\image{1.5}{orthogonal.png}
+\begin{enumerate}
+ \item Να αποδείξετε ότι τα τρίγωνα \(AB\Gamma \) και \(A\Delta \Gamma \) είναι όμοια.\points{7}
+ \item Να δείξετε ότι \(A\Gamma ^2=\Gamma \Delta \cdot B\Gamma \)\points{6}
+\end{enumerate}
+ \end{enumerate}
+\end{thema}
+\begin{thema}
+ Δίνεται ορθογώνιο \(AB\Gamma \), με \(\hat{A}=90^0 \) και το ύψος του \(A\Delta \). Αν ισχύει \(AB=6\) και \(Α\Delta = 2\sqrt{5} \), να βρείτε τα μήκη των τμημάτων \(B\Delta ,\Delta\Gamma ,A\Gamma\).\points{33}
+\end{thema}
+\begin{thema}
+ Στο παρακάτω σχήμα τα τμήματα \(AB\) και \(\Delta E\) είναι παράλληλα και τα τμήματα \(A\Gamma \) και \(\Gamma E\) είναι τέτοια ώστε \(A\Gamma =2 \Gamma E\). 
+ \image{.9}{similar_triangle.png}
+ \begin{enumerate}
+  \item Να αποδείξετε ότι τα τρίγωνα \(AB\Gamma \) και \(E\Delta \Gamma \).\points{20}
+  \item \begin{enumerate}
+         \item Να γράψετε τους λόγους των ομόλογων πλευρών των δύο τριγώνων.\points{10}
+         \item Ποιος είναι ο λόγος ομοιότητας των δύο τριγώνων?\points{4}
+        \end{enumerate}
+ \end{enumerate}
+\end{thema}
+\end{document}

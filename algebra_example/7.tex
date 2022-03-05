@@ -1,0 +1,162 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[a4paper,portrait,margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage[greek]{babel}
+\usepackage[iso-8859-7]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amscd, latexsym,eucal}
+\usepackage{paralist}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{subfiles}
+
+\usepackage{kerkis}
+\usepackage{enumerate}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{advdate}
+\usepackage{tcolorbox}
+
+\usepackage[normalem]{ulem}
+
+\usetikzlibrary{arrows}
+\selectlanguage{greek}
+\newcommand{\kali}{
+\vskip 1.0cm
+\begin{center}
+\textbf{\emph{Καλή Επιτυχία!}}
+\end{center}
+}
+
+\newtheorem{ask}{{\bf ¶σκηση}}
+\newtheorem{thema}{\bf Θέμα}
+\newtheorem{question}{\bf Ερώτηση}
+
+\newcommand{\yestarday}{{\AdvanceDate[-1]}}
+\newcommand{\tomorrow}{{\DayAfter[1]}}
+
+\newcommand{\tl}{\textlatin}
+\newcommand{\hm}{\text{ημ}}
+\newcommand{\syn}{\text{συν}}
+\newcommand{\ef}{\text{εφ}}
+\newcommand{\sef}{\text{σφ}}
+
+\newcommand{\points}[1]{
+\begin{flushright}
+\vskip 0.1cm
+\bf{(Μονάδες #1)}
+\end{flushright}
+\vskip 0.1cm
+}
+\newcommand{\orio}[2]{
+\lim \limits_{x\to #1}#2
+}
+\newcommand{\ar}{\mathbb{R}}
+\newcommand{\listitem}[1]{\item #1\vskip .3cm}
+\newcommand{\filline}[1]{\leavevmode\xleaders\hbox{#1}\hfill\kern0pt}
+\newcommand{\writeline}{\filline{\underline{ }}\vskip .2cm\noindent}
+\newcommand{\emptyline}{\uline{\hspace{2cm}}}
+\newcommand{\emptyspace}[1]{\uline{\hspace{#1cm}}}
+
+\newcommand{\linebox}[1]{
+    \noindent
+    \foreach \n in {1,...,#1}{\writeline}
+}
+
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+
+\newcommand{\image}[2]{
+\begin{figure}[H]
+\centering
+\includegraphics[scale=#1]{#2}
+\end{figure}
+}
+\newcommand{\ls}{Να χαρακτηρίσετε τις παρακάτω προτάσεις ως σωστό(Σ) ή λάθος(Λ).}
+
+\newcommand{\linear}[6]{
+\(
+\left\{
+\begin{array}{cccc}
+#1x &#2y &=&#3\\ 
+&&&\\ 
+#4x &#5y &=&#6\\ 
+\end{array}
+\right.
+\)
+}
+
+\def \vert{.2cm}
+\def \maxvert{.4cm}
+\def \scale{.5}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%Title%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\begin{center}
+\Huge\textsc{7ο Λύκειο Ιωαννίνων}
+\end{center}
+\begin{center}
+\LARGE{¶λγεβρα Β' Λυκείου}
+\end{center}
+
+\begin{center}
+\large{Τράπεζα Θεμάτων στα Γραμμικά Συστήματα}\vskip\vert
+%\small{\tl{Quiz}}\vskip \vert
+\small{Φύλλο Εργασίας}\vskip\vert
+% \scriptsize{Διάρκεια 10 λεπτά}
+\end{center}
+%\begin{center}
+%\large{Ομάδα Γ}
+%\end{center}
+\begin{center}
+\small{\tomorrow}
+%\small{\today}
+\end{center}
+%\vskip 0.5cm
+\begin{center}
+\small{Ονοματεπώνυμο: \writeline}
+\end{center}
+\vskip 0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ask}
+Δίνονται οι ευθείες: \(\varepsilon _1: 2x+y=6\) και \(\varepsilon _2: x-2y=-2\).\vskip\vert
+\begin{enumerate}
+ \item Να προσδιορίσετε αλγεβρικά το κοινό τους σημείο \(M\).\points{15}
+ \item Να δειχθεί ότι η ευθεία \(\varepsilon _3: 3x+y=8\) διέρχεται από το σημείο \(M\).\points{10}
+\end{enumerate}
+\linebox{10}
+\end{ask}
+\begin{ask}
+ Ο Κώστας έχει τρία παιδιά. Δύο δίδυμα κορίτσια και ένα αγόρι. Στην ερώτηση πόσων χρονών είναι τα παιδιά του, απάντησε ως εξής:\vspace{\vert}
+ \begin{enumerate}
+  \item Το άθροισμα των ηλικιών και των τριών παιδιών είναι 14.
+  \item Το γινόμενο της ηλικίας της κόρης μου επί την ηλικία του γιου μου είναι 24.
+  \item Το άθροισμα των ηλικιών των κοριτσιών είναι μικρότερο από την ηλικία του αγοριού.
+ \end{enumerate}
+ \begin{enumerate}
+  \item Να γράψετε τις εξισώσεις που περιγράφουν τα στοιχεία 1. και 2. που έδωσε ο Κώστας.
+  \points{8}
+  \item Να βρείτε τις ηλικίες των παιδιών του Κώστα.
+  \points{15}
+ \end{enumerate}
+\linebox{8}
+\end{ask}
+\begin{ask}
+ Δίνονται οι ευθείες \(\varepsilon _1: 2x+y=5,\varepsilon_2:-2x+3y=-9\varepsilon_3: 3x+2y=7\).\\
+ \begin{enumerate}
+  \item 
+  \begin{enumerate}
+   \item Να βρείτε τις συντεταγμένες του σημείου τομής των \(\varepsilon_1\) και \(\varepsilon_2\).
+   \item Να βρείτε τις συντεταγμένες του σημείου τομής των \(\varepsilon_1\) και \(\varepsilon_3\)
+  \end{enumerate}
+  \points{12}
+\item Νε την βοήθεια του πρώτου ερωτήματος, να δείξετε ότι το κοινό σημείο των \(\varepsilon_2\) και \(\varepsilon_3\) είναι σημείο της \(\varepsilon_1\).
+\points{13}
+ \end{enumerate}
+\linebox{10}
+\end{ask}
+\end{document}
